@@ -4,21 +4,11 @@ import '../App.css';
 import { Link } from 'react-router-dom';
 import { Navbar, Nav, NavItem, NavDropdown, MenuItem } from 'react-bootstrap';
 import ReactPlayer from 'react-player';
-// import '../style/Welcome.css';
 
 class HomePage extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-      ready: false,
-      // class: 'background-dummy'
-    }
   }
-
-  // componentDidMount() {
-  //   setTimeout(() => this.setState({
-  //     class: 'background-welcome'}), 1500)
-  // }
 
   render() {
     return (
@@ -38,6 +28,9 @@ class HomePage extends Component {
               <NavItem eventKey={2}><Link to='/contact'>Contact Us</Link></NavItem>
             </Nav>
             <Nav pullRight>
+              <Navbar.Brand>
+                <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/1000px-Google_%22G%22_Logo.svg.png'/>
+              </Navbar.Brand>
               <Navbar.Brand>
                 <img src='https://sophosnews.files.wordpress.com/2016/09/yelp.png?w=780&h=408&crop=1'/>
               </Navbar.Brand>

@@ -27,6 +27,9 @@ class AboutPage extends Component {
           </Nav>
           <Nav pullRight>
             <Navbar.Brand>
+              <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/1000px-Google_%22G%22_Logo.svg.png'/>
+            </Navbar.Brand>
+            <Navbar.Brand>
               <img src='https://sophosnews.files.wordpress.com/2016/09/yelp.png?w=780&h=408&crop=1'/>
             </Navbar.Brand>
             <Navbar.Brand>
