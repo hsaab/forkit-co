@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { Navbar, Nav, NavItem, NavDropdown, MenuItem } from 'react-bootstrap';
+import forkitlogo from '../style/forkitlogo.png';
 
 class ExperiencePage extends Component {
   constructor(props) {
@@ -12,9 +13,7 @@ class ExperiencePage extends Component {
       <div>
         <Navbar>
           <Navbar.Header>
-            <Navbar.Brand>
-              <a style={{color: 'black'}} href="/">Fork It</a>
-            </Navbar.Brand>
+            <a href='/'><img src={forkitlogo} width="100"/></a>
           </Navbar.Header>
           <Nav>
             <NavDropdown eventKey={3} title="Product" id="basic-nav-dropdown">
@@ -25,6 +24,7 @@ class ExperiencePage extends Component {
             <NavItem eventKey={2}><Link to='/contact'>Contact Us</Link></NavItem>
           </Nav>
           <Nav pullRight>
+            <NavItem eventKey={3.3}>Powered By</NavItem>
             <Navbar.Brand>
               <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/1000px-Google_%22G%22_Logo.svg.png'/>
             </Navbar.Brand>
