@@ -40,7 +40,7 @@ class AboutPage extends Component {
           </Nav>
         </Navbar>
         <strong style={{color: 'white'}}>About Fork It</strong>
-        <p style={{color: 'white'}}>Founders: Hassan, Vasish, Paul, Brandon</p>
+        <p style={{color: 'white'}}>Founders: Hassa, Vasish, Paul, Brandon</p>
         <div>
           <p style={{color: 'white'}}>The founders met during a hackathon and came up with the idea to create a decision making app for
           indecisive people. This idea became Fork It, an app that produces spontaneous decisions for its users. We liken our app to a kind of
