@@ -28,12 +28,16 @@ class About extends Component {
             <h2 className="display-3">Founders</h2>
             <Row>
               <Col xs={{ size: 5, order: 3, offset: 1 }}>
-                <Profile image={hassan} name={'Vasish'} bio={'Hassan Saab loves kbbq'}/>
-                <Profile image={hassan} name={'Hassan'} bio={'Hassan Saab loves kbbq'}/>
+                <Profile image={hassan} name={'Vasish'} title={'Head of Product'} bio={'Hassan Saab loves kbbq'}/>
+                <Profile image={hassan} name={'Hassan Saab'} title={'Head of Product'} bio={`Hassan architects and prioritizes
+                   key product themes and strategies, while supporting the front-end and back-end team in execution and
+                   implementation. Previously, Hassan worked in investment banking, focusing on business technology M&A and
+                   strategic advisory. Hassan graduated from the Wharton School of Business with a concentration in Finance. In
+                   his spare time, he enjoys creating and mixing a wide range of music (classical, EDM, etc.) and playing sports.`}/>
               </Col>
               <Col xs={{ size: 5, order: 3 }}>
-                <Profile image={hassan} name={'Brandon'} bio={'Hassan Saab loves kbbq'}/>
-                <Profile image={hassan} name={'Paul'} bio={'Hassan Saab loves kbbq'}/>
+                <Profile image={hassan} name={'Brandon'} title={'Head of Product'} bio={'Hassan Saab loves kbbq'}/>
+                <Profile image={hassan} name={'Paul'} title={'Head of Product'} bio={'Hassan Saab loves kbbq'}/>
               </Col>
             </Row>
           </Jumbotron>

@@ -6,11 +6,15 @@ const Mission = (props) => {
     <div>
       <Jumbotron fluid>
         <Container fluid>
-          <h2 className="display-3">Mission</h2>
-          <p className="lead">The founders met during a hackathon and came up with the idea to create a decision making app for
-          indecisive people. This idea became Fork It, an app that produces spontaneous decisions for its users. We liken our app to a kind of
-          a work flow aggregator in a sense where users do not have to go to multiple apps and websites in order to research and decide on a place to go or eat.
-          Our app will make these decisions for you at high accuracy using our advanced machine learning algorithm which asks the users questions.</p>
+          <h2 className="display-3">Overview</h2>
+          <p className="lead">
+          The founders met during a hackathon and came up with the idea to create a decision making app for
+          indecisive people. This idea later developed into Fork It, a social application which brings friends
+          together to embark on end-to-end spontaneous experiences. Our application 'gamifies' the entire planning process
+          to make choosing the date, time, group and activity into an enjoyable, instantaneous experience. Lastly, a variety of third-party
+          integrations, including Uber, Lyft and Google ensure that users can get to any experiences with just the click of a button.
+          </p>
+          <p className="lead"> Remember, when in doubt, just Fork It :) </p>
         </Container>
       </Jumbotron>
     </div>

@@ -21,11 +21,11 @@ class Profile extends Component {
           <Card>
             <CardBody>
               <CardTitle className="profName">{this.props.name}</CardTitle>
-              <CardSubtitle className="profSub">Co-Founder</CardSubtitle>
+              <CardSubtitle className="profSub">{this.props.title}</CardSubtitle>
             </CardBody>
             <img className="headShot" src={this.props.image} alt="Card image cap" />
             <CardBody>
-              <CardText className="profSub"> <strong>Biography: </strong> {this.props.bio}</CardText>
+              <CardText className="profSub">{this.props.bio}</CardText>
             </CardBody>
           </Card>
         </Row>
