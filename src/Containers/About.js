@@ -8,6 +8,9 @@ import Navbar from '../Components/Navbar.js';
 import { Card, CardImg, CardText, CardBody, CardLink,
   CardTitle, CardSubtitle, Col, Row, Jumbotron, Container } from 'reactstrap';
 import hassan from '../style/assets/Hassan.jpg';
+import vasish from '../style/assets/Vasish.jpg';
+import brandon from '../style/assets/Brandon.jpg';
+import paul from '../style/assets/Paul.jpg';
 import Profile from '../Components/Profile.js';
 import Mission from '../Components/Mission.js';
 
@@ -28,7 +31,7 @@ class About extends Component {
             <h2 className="display-3">Founders</h2>
             <Row>
               <Col xs={{ size: 5, order: 3, offset: 1 }}>
-                <Profile image={hassan} name={'Vasish'} title={'Co-Founder'} bio={`Vasish is currently the lead backend developer
+                <Profile image={vasish} name={'Vasish'} title={'Co-Founder'} bio={`Vasish is currently the lead backend developer
                   for ForkIt and works on architecting system design and implementing core application functionality. He graduated
                   with a degree in Physics from the University of Chicago, where he did Astrophysics research for the South Pole
                   Telescope.  Vasish hails from a small island off the east coast of Madagascar known mostly for an extinct bird
@@ -42,12 +45,12 @@ class About extends Component {
                    Hassan's dream is to one day make the NBA.`}/>
               </Col>
               <Col xs={{ size: 5, order: 3 }}>
-                <Profile image={hassan} name={'Brandon Eng'} title={'Co-Founder'} bio={`Brandon is a frontend-focused developer with a
+                <Profile image={brandon} name={'Brandon Eng'} title={'Co-Founder'} bio={`Brandon is a frontend-focused developer with a
                   keen sense for UI/UX layout and design. He originally created the idea for Fork It in preparation for a hackathon.
                   Prior to becoming a software engineer, Brandon was a business student at Washington University in St. Louis Olin
                   Business School with healthcare and management consulting experience. Outside of coding, Brandon is an avid skiier
                   and outdoor adventurer. His dream is to one day be invited to perform on stage with Chance The Rapper.`}/>
-                <Profile image={hassan} name={'Paul Jin'} title={'Co-Founder'} bio={`Paul is one of the primary backend developers
+                <Profile marginTop="10px" image={paul} name={'Paul Jin'} title={'Co-Founder'} bio={`Paul is one of the primary backend developers
                   who provides support and insight on systems design decisions. Previously, Paul worked as a freelance full stack
                   developer and as a product designer at various start ups in the Bay Area. Paul is currently a Computer Engineering
                   student attending Santa Clara University. In his free time, Paul enjoys games, eSports, long walks on the beach, and
