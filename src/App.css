@@ -1,28 +1,63 @@
-.App {
-  text-align: center;
+.mainContainer {
+  background-color: transparent;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.subContainer {
+  margin-left: 1.5vw;
+  margin-right: 2vw;
+  margin-top: 3vh;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
+.bg {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-position: 'center';
+    background-repeat: 'no-repeat';
+    background-size: 'cover';
+}
+
+.mainText {
+  font-size: 1.5vw;
   color: white;
+  font-family: sans-serif;
+  position: absolute;
+  left: 0;
+  background: transparent;
 }
 
-.App-title {
-  font-size: 1.5em;
+.navText {
+  font-size: 1.1vw;
 }
 
-.App-intro {
-  font-size: large;
+.navContainer {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  border-bottom: 0.4px solid grey;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.navLogo {
+  width: 20%;
+  height: auto;
+  margin-top: 1vh;
+}
+
+.headShot {
+  width: 100%;
+  height: auto;
+  align-self: flex-start;
+}
+
+.eachCard {
+  margin-top: 3vh;
+  margin-right: 5vw;
+}
+
+.profName {
+  font-size: 1.5vw;
+}
+
+.profSub {
+  font-size: 1vw;
 }
