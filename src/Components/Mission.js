@@ -14,7 +14,6 @@ const Mission = (props) => {
           to make choosing the date, time, group and activity into an enjoyable, instantaneous experience. Lastly, a variety of third-party
           integrations, including Uber, Lyft and Google ensure that users can get to any experiences with just the click of a button.
           </p>
-          <p className="lead"> Remember, when in doubt, just Fork It :) </p>
         </Container>
       </Jumbotron>
     </div>
