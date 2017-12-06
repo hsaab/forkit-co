@@ -41,9 +41,10 @@
 }
 
 .headShot {
-  width: 100%;
+  width: 70%;
   height: auto;
-  align-self: flex-start;
+  align-self: center;
+  overflow: hidden;
 }
 
 .eachCard {
@@ -61,5 +62,6 @@
 }
 
 .paul {
-  margin-top: 2vh;
+  margin-top: 7.2vh;
+  margin-right: 5vw;
 }

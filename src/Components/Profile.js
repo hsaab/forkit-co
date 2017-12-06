@@ -16,7 +16,7 @@ class Profile extends Component {
 
   render() {
     return (
-      <div className="eachCard">
+      <div className={this.props.class}>
         <Row>
           <Card>
             <CardBody>
