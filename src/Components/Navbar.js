@@ -38,6 +38,9 @@ export default class Home extends React.Component {
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
+                <NavLink className='navText' tag={Link} to="/">Home</NavLink>
+              </NavItem>
+              <NavItem>
                 <NavLink className='navText' tag={Link} to="/about">About</NavLink>
               </NavItem>
               <NavItem>
