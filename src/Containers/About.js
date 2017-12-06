@@ -28,16 +28,20 @@ class About extends Component {
             <h2 className="display-3">Founders</h2>
             <Row>
               <Col xs={{ size: 5, order: 3, offset: 1 }}>
-                <Profile image={hassan} name={'Vasish'} title={'Head of Product'} bio={'Hassan Saab loves kbbq'}/>
-                <Profile image={hassan} name={'Hassan Saab'} title={'Head of Product'} bio={`Hassan architects and prioritizes
+                <Profile image={hassan} name={'Vasish'} title={'Co-Founder'} bio={'Hassan Saab loves kbbq'}/>
+                <Profile image={hassan} name={'Hassan Saab'} title={'Co-Founder'} bio={`Hassan architects and prioritizes
                    key product themes and strategies, while supporting the front-end and back-end team in execution and
                    implementation. Previously, Hassan worked in investment banking, focusing on business technology M&A and
                    strategic advisory. Hassan graduated from the Wharton School of Business with a concentration in Finance. In
                    his spare time, he enjoys creating and mixing a wide range of music (classical, EDM, etc.) and playing sports.`}/>
               </Col>
               <Col xs={{ size: 5, order: 3 }}>
-                <Profile image={hassan} name={'Brandon'} title={'Head of Product'} bio={'Hassan Saab loves kbbq'}/>
-                <Profile image={hassan} name={'Paul'} title={'Head of Product'} bio={'Hassan Saab loves kbbq'}/>
+                <Profile image={hassan} name={'Brandon'} title={'Co-Founder'} bio={'Hassan Saab loves kbbq'}/>
+                <Profile image={hassan} name={'Paul'} title={'Co-Founder'} bio={`Paul is one of the primary backend developers
+                  who provides support and insight on systems design decisions. Previously, Paul worked as a freelance full stack
+                  developer and as a product designer at various start ups in the Bay Area. Paul is currently a Computer Engineering
+                  student attending Santa Clara University. In his free time, Paul enjoys games, eSports, long walks on the beach, and
+                  outdoor activities.`}/>
               </Col>
             </Row>
           </Jumbotron>
