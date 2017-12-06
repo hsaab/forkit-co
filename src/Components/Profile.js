@@ -25,7 +25,7 @@ class Profile extends Component {
             </CardBody>
             <img className="headShot" src={this.props.image} alt="Card image cap" />
             <CardBody>
-              <CardText className="profSub">{this.props.bio}</CardText>
+              <CardText> <large className="profSub"> {this.props.bio} </large> </CardText>
             </CardBody>
           </Card>
         </Row>
