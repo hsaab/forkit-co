@@ -31,14 +31,14 @@ class About extends Component {
             <h2 className="display-3">Founders</h2>
             <Row>
               <Col xs={{ size: 5, order: 3, offset: 1 }}>
-                <Profile class={'eachCard'} image={vasish} name={'Vasish'} title={'Co-Founder'} bio={`Vasish is currently the lead backend developer
-                  for ForkIt and works on architecting system design and implementing core application functionality. He graduated
+                <Profile class={'eachCard'} image={vasish} name={'Vasish Baungally'} title={'Co-Founder'} bio={`Vasish is currently the lead backend developer
+                  for Fork It and works on architecting system design and implementing core application functionality. He graduated
                   with a degree in Physics from the University of Chicago, where he did Astrophysics research for the South Pole
                   Telescope.  Vasish hails from a small island off the east coast of Madagascar known mostly for an extinct bird
                   (The Dodo). In his spare time, he does Taekwondo, loves to swim and likes talking about soccer. Vasish’s dream
                   is to work on strong A.I. while meditating in the Himalayas.`}/>
                 <Profile class={'eachCard'} image={hassan} name={'Hassan Saab'} title={'Co-Founder'} bio={`Hassan architects and prioritizes
-                   key product themes and strategies, while supporting the front-end and back-end team in execution and
+                   key product themes and strategies, while supporting the frontend and backend team in execution and
                    implementation. Previously, Hassan worked in investment banking, focusing on business technology M&A and
                    strategic advisory. Hassan graduated from the Wharton School of Business with a concentration in Finance. In
                    his spare time, he enjoys creating a wide range of music (classical, EDM, etc.) and dunking on 8 foot rims.
@@ -53,7 +53,7 @@ class About extends Component {
                 <Profile class={'paul'} image={paul} name={'Paul Jin'} title={'Co-Founder'} bio={`Paul is one of the primary backend developers
                   who provides support and insight on systems design decisions. Previously, Paul worked as a freelance full stack
                   developer and as a product designer at various start ups in the Bay Area. Paul is currently a Computer Engineering
-                  student attending Santa Clara University. In his free time, Paul enjoys games, eSports, long walks on the beach, and
+                  student attending Santa Clara University. In his free time, Paul enjoys games, eSports, long walks on the beach and
                   outdoor activities. Paul dreams to be the next actor to play the most interesting man in the world for Dos Equis.`}/>
               </Col>
             </Row>
