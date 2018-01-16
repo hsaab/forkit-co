@@ -23,7 +23,7 @@ class HomePage extends Component {
   componentDidMount() {
     setTimeout(() => this.setState({
       seeClass: 'seeCont'
-    }), 34000)
+    }), 34400)
 
     scrollToComponent(this.Home, { offset: 0, align: 'top', duration: 500});
   }
