@@ -31,7 +31,7 @@ class Home extends React.Component {
     } else if (this.state.first.length >= 2 && !this.state.email.includes('@')){
       this.props.alert.error(<div style={{ color: 'white', fontFamily: 'Futura', fontSize: '1.5em' }}>Fix email field.</div>)
     } else {
-      this.props.alert.error(<div style={{ color: 'white', fontFamily: 'Futura', fontSize: '1.5em' }}>Fix name field.</div>)
+      this.props.alert.error(<div style={{ color: 'white', fontFamily: 'Futura', fontSize: '1.5em' }}>Fix name and / or email field.</div>)
     }
   }
 
