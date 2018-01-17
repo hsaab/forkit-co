@@ -16,16 +16,28 @@ class HomePage extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      seeClass: 'background-dummy'
+      seeClass: 'background-dummy',
+      width: 0,
+      height: 0
     }
+    this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
   }
 
   componentDidMount() {
     setTimeout(() => this.setState({
       seeClass: 'seeCont'
-    }), 34400)
-
+    }), 34400) 
     scrollToComponent(this.Home, { offset: 0, align: 'top', duration: 500});
+    this.updateWindowDimensions();
+    window.addEventListener('resize', this.updateWindowDimensions);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.updateWindowDimensions);
+  }
+
+  updateWindowDimensions() {
+    this.setState({ width: window.innerWidth, height: window.innerHeight });
   }
 
   scrollToTut1() {
@@ -42,7 +54,8 @@ class HomePage extends Component {
         <section className='vidSection' ref={(section) => { this.Home = section; }}>
           <Navbar/>
           <div className='background-vid'>
-            <ReactPlayer url={require('../ForkItPromo.mp4')} playing width='100%' height='auto'/>
+            {this.state.width < 711 ? <img className='background-pic' src={require('../style/assets/background-pic.png')}/> :
+            <ReactPlayer url={require('../ForkItPromo.mp4')} playing width='100%' height='auto'/>}
             <div className={this.state.seeClass} >
               <div className='seeText' onClick={() => {this.scrollToTut1()}}>See how it works</div>
               <img src={downIcon} className="downIcon" onClick={() => {this.scrollToTut1()}}/>

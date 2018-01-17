@@ -18,20 +18,19 @@ class Home extends React.Component {
     if(this.state.first.length >= 2 && this.state.email.includes('@')) {
       axios.get(`https://forkit-signup.herokuapp.com/add?first=${this.state.first}&email=${this.state.email}`)
         .then((result) => {
+          this.props.alert.success(<div style={{ color: 'white', fontFamily: 'Futura', fontSize: '1.5vw' }}>Success!</div>);
           this.setState({
             first: '',
             email: ''
           })
-          this.props.alert.success(<div style={{ color: 'white', fontFamily: 'Futura', fontSize: '1.5em' }}>Success!</div>);
-          console.log(result);
         })
         .catch((e) => {
           console.log(e);
         })
     } else if (this.state.first.length >= 2 && !this.state.email.includes('@')){
-      this.props.alert.error(<div style={{ color: 'white', fontFamily: 'Futura', fontSize: '1.5em' }}>Fix email field.</div>)
+      this.props.alert.error(<div style={{ color: 'white', fontFamily: 'Futura', fontSize: '1.5vw' }}>Fix email field.</div>)
     } else {
-      this.props.alert.error(<div style={{ color: 'white', fontFamily: 'Futura', fontSize: '1.5em' }}>Fix name and / or email field.</div>)
+      this.props.alert.error(<div style={{ color: 'white', fontFamily: 'Futura', fontSize: '1.5vw' }}>Fix name and / or email field.</div>)
     }
   }
 
@@ -44,12 +43,14 @@ class Home extends React.Component {
             type='text'
             className='inputFirst'
             placeholder='First Name'
+            value={this.state.first}
             onChange={(e) => this.setState({ first: e.target.value })}
             />
           <input
             type='text'
             className='inputEmail'
             placeholder='Email'
+            value={this.state.email}
             onChange={(e) => this.setState({ email: e.target.value })}
             />
           <button

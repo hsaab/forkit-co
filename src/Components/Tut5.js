@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import '../App.scss';
 
-class Tut4 extends Component {
+class Tut5 extends Component {
   constructor(props) {
     super(props)
     this.state = {
@@ -23,4 +23,4 @@ class Tut4 extends Component {
   }
 }
 
-export default Tut4;
+export default Tut5;
