@@ -26,7 +26,7 @@ class HomePage extends Component {
   componentDidMount() {
     setTimeout(() => this.setState({
       seeClass: 'seeCont'
-    }), 34400) 
+    }), 34400)
     scrollToComponent(this.Home, { offset: 0, align: 'top', duration: 500});
     this.updateWindowDimensions();
     window.addEventListener('resize', this.updateWindowDimensions);
@@ -56,7 +56,16 @@ class HomePage extends Component {
           <div className='background-vid'>
             {this.state.width < 711 ? <img className='background-pic' src={require('../style/assets/background-pic.png')}/> :
             <ReactPlayer url={require('../ForkItPromo.mp4')} playing width='100%' height='auto'/>}
-            <div className={this.state.seeClass} >
+            {this.state.width < 711 ?
+              <div className='seeCont'>
+                <div className='seeText' onClick={() => {this.scrollToTut1()}}>See how it works</div>
+                <img src={downIcon} className="downIcon" onClick={() => {this.scrollToTut1()}}/>
+              </div> :
+              <div className={this.state.seeClass}>
+                <div className='seeText' onClick={() => {this.scrollToTut1()}}>See how it works</div>
+                <img src={downIcon} className="downIcon" onClick={() => {this.scrollToTut1()}}/>
+              </div>}
+            <div className={this.state.seeClass}>
               <div className='seeText' onClick={() => {this.scrollToTut1()}}>See how it works</div>
               <img src={downIcon} className="downIcon" onClick={() => {this.scrollToTut1()}}/>
             </div>

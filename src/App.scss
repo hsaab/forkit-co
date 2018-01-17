@@ -399,14 +399,18 @@
 
   .inputFirst {
     width: 34%;
-    padding-left: 0.5vw;
+    padding-left: 1.5vw;
     font-size: 3vw;
+    border: 0.5px solid lightgrey;
+    border-radius: 0;
   }
 
   .inputEmail {
     width: 34%;
-    padding-left: 0.5vw;
+    padding-left: 1.5vw;
     font-size: 3vw;
+    border: 0.5px solid lightgrey;
+    border-radius: 0;
   }
 
   ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
