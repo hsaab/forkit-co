@@ -49,7 +49,7 @@ class HomePage extends Component {
   }
 
   playing(e) {
-    console.log(e, "playing");
+    console.log(e, "playing error");
   }
 
   render() {
