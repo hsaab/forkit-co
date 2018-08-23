@@ -48,6 +48,10 @@ class HomePage extends Component {
     scrollToComponent(this.contact, { offset: 0, align: 'top', duration: 500});
   }
 
+  playing(e) {
+    console.log(e, "playing");
+  }
+
   render() {
     return (
       <div>
@@ -55,7 +59,7 @@ class HomePage extends Component {
           <Navbar/>
           <div className='background-vid'>
             {this.state.width < 711 ? <img className='background-pic' src={require('../style/assets/background-pic.png')}/> :
-            <ReactPlayer url={require('../ForkItPromo.mp4')} playing width='100%' height='auto'/>}
+            <ReactPlayer onError={(e) => this.playing(e)} url={require('../ForkItPromo.mp4')} muted playing width='100%' height='auto'/>}
             {this.state.width < 711 ?
               <div className='seeCont'>
                 <div className='seeText' onClick={() => {this.scrollToTut1()}}>See how it works</div>
