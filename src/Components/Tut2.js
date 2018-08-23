@@ -11,11 +11,11 @@ class Tut2 extends Component {
   render() {
     return (
       <div className='tutCont'>
-        <img className='emblem' src={require('../style/assets/forkitemblem.png')}/>
+        <img alt="" className='emblem' src={require('../style/assets/forkitemblem.png')}/>
         <div className='step1'>2. Create a new multiplayer experience</div>
         <div className='iphoneCont'>
-          <img className='iphone' src={require('../style/assets/Eat-iphone.png')}/>
-          <img className='iphone' src={require('../style/assets/MyEvents-iphone.png')}/>
+          <img alt="" className='iphone' src={require('../style/assets/Eat-iphone.png')}/>
+          <img alt="" className='iphone' src={require('../style/assets/MyEvents-iphone.png')}/>
         </div>
       </div>
     )

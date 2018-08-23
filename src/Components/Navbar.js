@@ -1,6 +1,5 @@
 import React from 'react';
 import forkitlogo from '../style/assets/forkitlogo.png';
-import { Link } from 'react-router-dom';
 import axios from 'axios';
 import { withAlert } from 'react-alert'
 
@@ -37,7 +36,7 @@ class Home extends React.Component {
   render() {
     return (
       <div className="navContainer">
-        <img src={forkitlogo} className="navLogo"/>
+        <img alt="" src={forkitlogo} className="navLogo"/>
         <div className='inputCont'>
           <input
             type='text'

@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
-import downIcon from '../style/assets/downWhite.png';
 import '../App.scss';
-import scrollToComponent from 'react-scroll-to-component';
 import Swiper from 'react-id-swiper';
 import Tut1 from '../Components/Tut1.js';
 import Tut2 from '../Components/Tut2.js';

@@ -1,15 +1,10 @@
 import React, { Component } from 'react';
-import logo from '../logo.svg';
 import downIcon from '../style/assets/downWhite.png';
 import downGrey from '../style/assets/downGrey.png';
 import '../App.scss';
 import Navbar from '../Components/Navbar.js';
 import scrollToComponent from 'react-scroll-to-component';
 import Tutorial from '../Containers/Tutorial.js';
-import Swiper from 'react-id-swiper';
-import friends2 from '../style/assets/friends2.png';
-import { Card, CardImg, CardText, CardBody, CardLink,
-  CardTitle, CardSubtitle, Col, Row, Jumbotron, Container } from 'reactstrap';
 
 class HomePage extends Component {
   constructor(props) {
@@ -53,21 +48,21 @@ class HomePage extends Component {
         <section className='vidSection' ref={(section) => { this.Home = section; }}>
           <Navbar/>
           <div className='background-vid'>
-            {this.state.width < 711 ? <img className='background-pic' src={require('../style/assets/background-pic.png')}/> :
+            {this.state.width < 711 ? <img alt="" className='background-pic' src={require('../style/assets/background-pic.png')}/> :
             <video src={require('../ForkItPromo.mp4')} muted autoPlay width='100%' height='auto'>
             </video>}
             {this.state.width < 711 ?
               <div className='seeCont'>
                 <div className='seeText' onClick={() => {this.scrollToTut1()}}>See how it works</div>
-                <img src={downIcon} className="downIcon" onClick={() => {this.scrollToTut1()}}/>
+                <img alt="" src={downIcon} className="downIcon" onClick={() => {this.scrollToTut1()}}/>
               </div> :
               <div className={this.state.seeClass}>
                 <div className='seeText' onClick={() => {this.scrollToTut1()}}>See how it works</div>
-                <img src={downIcon} className="downIcon" onClick={() => {this.scrollToTut1()}}/>
+                <img alt="" src={downIcon} className="downIcon" onClick={() => {this.scrollToTut1()}}/>
               </div>}
             <div className={this.state.seeClass}>
               <div className='seeText' onClick={() => {this.scrollToTut1()}}>See how it works</div>
-              <img src={downIcon} className="downIcon" onClick={() => {this.scrollToTut1()}}/>
+              <img alt="" src={downIcon} className="downIcon" onClick={() => {this.scrollToTut1()}}/>
             </div>
           </div>
         </section>
@@ -75,12 +70,12 @@ class HomePage extends Component {
           <Tutorial/>
           <div className='contactCont'>
             <div className='contactText' onClick={() => {this.scrollToContact()}}>Contact Us</div>
-            <img src={downGrey} className="downIcon" onClick={() => {this.scrollToContact()}}/>
+            <img alt="" src={downGrey} className="downIcon" onClick={() => {this.scrollToContact()}}/>
           </div>
         </section>
         <section className='tutorial' ref={(section) => { this.contact = section; }}>
           <div className='picCont'>
-            <img className='contactPic' src={require('../style/assets/ContactUs.png')}/>
+            <img alt="" className='contactPic' src={require('../style/assets/ContactUs.png')}/>
           </div>
         </section>
       </div>
