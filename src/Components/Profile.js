@@ -3,7 +3,6 @@ import logo from '../logo.svg';
 import forkitlogo from '../style/assets/forkitlogo.png';
 import '../App.css';
 import { Link } from 'react-router-dom';
-import ReactPlayer from 'react-player';
 import Navbar from './Navbar.js';
 import { Card, CardImg, CardText, CardBody, CardLink,
   CardTitle, CardSubtitle, Col, Row } from 'reactstrap';

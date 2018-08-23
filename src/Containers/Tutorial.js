@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from '../logo.svg';
 import downIcon from '../style/assets/downWhite.png';
 import '../App.scss';
 import scrollToComponent from 'react-scroll-to-component';
